@@ -1,0 +1,136 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 20px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #ecf0f1;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.sidebar li {
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  transition: background 0.3s, color 0.3s;
+  font-size: 18px;
+}
+
+.sidebar li.active,
+.sidebar li:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #ecf0f1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-info {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-info h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+.project-info p {
+  font-size: 16px;
+  color: #7f8c8d;
+}
+
+.project-info a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.project-info a:hover {
+  text-decoration: underline;
+}
+
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.drop-files {
+  border: 2px dashed #bdc3c7;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.file-previews {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.file-preview {
+  margin: 10px;
+}
+
+.file-preview img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 4px;
+}
+
+.upload-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.upload-button-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.upload-button-container button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.upload-button-container button:not(:disabled):hover {
+  background-color: #2980b9;
+}

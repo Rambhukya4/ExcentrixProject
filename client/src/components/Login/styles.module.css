@@ -1,0 +1,132 @@
+/* Container */
+.login_container {
+	width: 100%;
+	min-height: 100vh;
+	background-color: #f7f8fa;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+/* Form Container */
+.login_form_container {
+	width: 80%;
+	max-width: 900px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	border-radius: 12px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+/* Left Side */
+.left {
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+}
+
+.left h1 {
+	color: #3bb19b;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.subtext {
+	font-size: 16px;
+	color: #666;
+	margin-bottom: 30px;
+}
+
+/* Form Styling */
+.form_container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 400px;
+}
+
+.input {
+	outline: none;
+	border: 1px solid #ccc;
+	width: 100%;
+	padding: 15px;
+	border-radius: 8px;
+	background-color: #f9f9f9;
+	margin-bottom: 15px;
+	font-size: 14px;
+	color: #333;
+}
+
+.error_msg {
+	padding: 12px;
+	margin-bottom: 15px;
+	font-size: 14px;
+	background-color: #f34646;
+	color: white;
+	border-radius: 5px;
+	text-align: center;
+}
+
+/* Right Side */
+.right {
+	background-color: #3bb19b;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 40px;
+}
+
+.right h1 {
+	color: white;
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+
+.right .subtext {
+	font-size: 16px;
+	color: #f7f8fa;
+	margin-bottom: 20px;
+}
+
+/* Buttons */
+.white_btn,
+.green_btn {
+	border: none;
+	outline: none;
+	padding: 12px 20px;
+	border-radius: 8px;
+	width: 100%;
+	max-width: 180px;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.green_btn {
+	background-color: #3bb19b;
+	color: white;
+	margin-top: 10px;
+}
+
+.green_btn:hover {
+	background-color: #32a089;
+}
+
+.white_btn {
+	background-color: white;
+	color: #3bb19b;
+	border: 1px solid #3bb19b;
+}
+
+.white_btn:hover {
+	background-color: #f1f1f1;
+}
